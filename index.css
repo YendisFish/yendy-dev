@@ -4,6 +4,7 @@
     width: 100%;
     height: 100%;
     background-color: #16394d;
+    z-index: 0;
 }
 
 #yendypfp {
@@ -65,4 +66,10 @@
         text-decoration: none;
         color: #487e99;
     }
+}
+
+#pixi-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
