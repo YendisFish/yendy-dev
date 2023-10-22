@@ -1,29 +1,172 @@
 <!DOCTYPE html>
 
+<html>
+
 <head>
-    <link rel="stylesheet" href="index.css">
+    <title>public class YendisFish { } ‎‎‎‎ </title> <!--invisible chars to add space-->
+    <link rel="icon" type="image/x-png" href="yendypfp.png">
+    <meta name="viewport" content="width=device-width">
+    <link media="only screen and (min-width: 1000px)" href="/css/index.css" type="text/css" rel="stylesheet" />
+    <link media="only screen and (max-width: 1000px)" href="/css/index-small.css" type="text/css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 </head>
-<body id="particles-js">
-    <div id="particles-js">
-        <table>
-            <tr>
-                <th><img id="yendypfp" src="yendypfp.png" draggable="false"></th>
-                <th id="yendy-intro">Hello friends! I am...</th>
-                <th><div id="yendy-bar"></div></th>
-                <th id="yendy-word">yendy</th>
-                <th id="yendy-word-suffix">[dev]</th>
-            </tr>
-        </table>
 
-        <table id="contacts">
-            <tr><td>Github: <a href="https://github.com/YendisFish/">YendisFish</td></tr>
-            <tr><td>Discord: <a>yendisfish</a></td></tr>
-            <tr><td>Organization: <a href="https://thcotd.org">THCOTD</a></td></tr>
-        </table>
+<body id="to-top">
+    <div id="particles-js"></div>
+    <noscript>
+        <div style="position:fixed;width:100%;top:5px;color:red;text-align:center;font-size:larger;">
+            This site utilizes JavaScript, many features WILL be broken.
+        </div>
+    </noscript>
+
+    <div id="welcome-card-side">
+        <div id="welcome">
+            <div id="top">
+                <img src="yendypfp.png" id="yendy-pfp" onclick="togglePFP();" />
+                <div id="details">
+                    <h2>Hello, friends! I am...</h2>
+                    <hr />
+                    <h1 id="name">Yendy</h1>
+                    <table id="contacts">
+                        <tr>
+                            <td><i class="fa-brands fa-github"></i> <a href="https://github.com/YendisFish/"
+                                    target="_blank">YendisFish</td>
+                        </tr>
+                        <tr>
+                            <td><i id="FUCKYOUDISCORD" class="fa-brands fa-discord"></i> <a
+                                    href="https://discord.com/users/259445589773647872" target="_blank">yendisfish</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-globe"></i> <a href="https://thcotd.org"
+                                    target="_blank">THCoTD</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="skills">
+                <div>
+                    <img onclick="transport('https://dotnet.microsoft.com/en-us/languages/csharp');"
+                        src="https://img.shields.io/badge/C%20Sharp-37008f.svg?style=for-the-badge&logo=C-Sharp&logoColor=9d73d9" />
+                    <img onclick="transport('https://www.open-std.org/jtc1/sc22/wg14/');"
+                        src="https://img.shields.io/badge/C%20Lang-00599c.svg?style=for-the-badge&logo=C&logoColor=659ad2" />
+                    <img onclick="transport('https://java.com');"
+                        src="https://img.shields.io/badge/Java-ec2025.svg?style=for-the-badge&logo=openjdk&logoColor=f9a6a8" />
+                </div>
+                <div>
+                    <img onclick="transport('https://javascript.com');"
+                        src="https://img.shields.io/badge/JavaScript-f0db4f.svg?style=for-the-badge&logo=JavaScript&logoColor=323330" />
+                    <img onclick="transport('https://git-scm.com');"
+                        src="https://img.shields.io/badge/Git-f05033.svg?style=for-the-badge&logo=Git&logoColor=fad6d0" />
+                    <img onclick="transport('https://gitlab.com');"
+                        src="https://img.shields.io/badge/Gitlab-fc6d26.svg?style=for-the-badge&logo=Gitlab&logoColor=ffc0a0" />
+                </div>
+                <div>
+                    <img onclick="transport('https://www.microsoft.com/en-us/windows');"
+                        src="https://img.shields.io/badge/Windows-0078d6.svg?style=for-the-badge&logo=Windows&logoColor=70bdf9" />
+                    <img onclick="transport('https://www.linuxfoundation.org');"
+                        src="https://img.shields.io/badge/Linux-252525.svg?style=for-the-badge&logo=Linux&logoColor=fdfdfb" />
+                    <img onclick="transport('https://archlinux.org');"
+                        src="https://img.shields.io/badge/Arch%20Linux-1793d1.svg?style=for-the-badge&logo=Arch-Linux&logoColor=94d7f9" />
+                </div>
+                <div>
+                    <img onclick="transport('https://mongodb.com');"
+                        src="https://img.shields.io/badge/MongoDB-54b541.svg?style=for-the-badge&logo=MongoDB&logoColor=a7e09c" />
+                    <img onclick="transport('https://www.postgresql.org');"
+                        src="https://img.shields.io/badge/Postgres-336791.svg?style=for-the-badge&logo=PostgreSQL&logoColor=a4c3db" />
+                </div>
+                <div>
+                    <img onclick="transport('https://nginx.com');"
+                        src="https://img.shields.io/badge/NGINX-009639.svg?style=for-the-badge&logo=NGINX&logoColor=74ca95" />
+                    <img onclick="transport('https://docker.com');"
+                        src="https://img.shields.io/badge/Docker-1d63ed.svg?style=for-the-badge&logo=Docker&logoColor=b6ceff" />
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="particles.js"></script>    
+
+    <div id="project-side">
+        <div class="repo-card" onclick="transport('https://github.com/yendisfish/arco');">
+            <h1>YendisFish/Arco</h1>
+            <p>Arco is a self contained database meant to be lightweight and easy to use. It makes it extremely easy
+                to convert between C# objects and database queries.</p>
+            <br />
+            <p>Oct. 15, 2023 - C# - Yendy</p>
+        </div>
+
+        <div class="repo-card" onclick="transport('https://github.com/grimtin10/rainbow');">
+            <h1>Grimtin10/Rainbow</h1>
+            <p>Rainbow is a bytecode runtime written in C# meant to give the user complete freedom over literally
+                everything.</p>
+            <br />
+            <p>Sep. 10, 2023 - C#, C - Grimtin10 & Yendy</p>
+        </div>
+
+        <div class="repo-card" onclick="transport('https://github.com/yendisfish/ellie');">
+            <h1>YendisFish/Ellie</h1>
+            <p>This is a discord bot that uses the AUTOMATIC1111 stable-diffusion-webui API to connect discord users
+                with a locally run instance of stable diffusion! You will need a number of dependencies for this
+                project!</p>
+            <br />
+            <p>Aug. 14, 2023 - C# - Yendy & Stormy</p>
+        </div>
+
+        <div class="repo-card" onclick="transport('https://github.com/The-Holy-Church-of-Terry-Davis/dawn');">
+            <h1>THCoTD/DAWN</h1>
+            <p>This is a webserver project written in JS/PY and C#. The webserver itself is written entirely in C#,
+                however, the frontend of the webserver is written in JS/PY. JS/PY also will help take care of
+                deploying new DAWN applications.</p>
+            <br />
+            <p>Mar. 9, 2023 - C#, JS, HTML, Python, CSS, Dockerfile - Yendy & QAEZZ</p>
+        </div>
+
+        <div class="repo-card" onclick="transport('https://github.com/yendisfish/efi.net');">
+            <h1>YendisFish/Efi.Net [ABANDONED]</h1>
+            <p>Efi.Net is a .Net 7 oriented library wrapping the UEFI API. This project utilizes C#s NativeAOT
+                features to allow C# to run as a self contained UEFI application.</p>
+            <br />
+            <p>Aug. 23, 2023 - C# - Yendy</p>
+        </div>
+
+        <div class="repo-card"
+            onclick="transport('https://github.com/The-Holy-Church-of-Terry-Davis/divinityC-x86_64');">
+            <h1>THCoTD/divinityC-x86_64 [WIP]</h1>
+            <p>The Holy Church Of Terry Davis would love to present our new flagship project: Divinity! This is an
+                x86_64 operating system written in C, C#, and x86_64 assembly!
+
+                This is a passion project and is likely to be unstable for most cases! But this is our hurrah for
+                Terry himself.</p>
+            <br />
+            <p>Aug. 21, 2023 - C, C#, Makefile - QAEZZ & Yendy</p>
+        </div>
+
+        <footer style="text-align: center; padding-bottom: 10px;">
+            <br />
+            © 2023 Yendy a/k/a YendisFish. All rights reserved.
+            </br>
+            Designed by <a href="https://github.com/yendisfish" target="_blank">Yendy</a> | Made by <a
+                href="https://qaezz.dev" target="_blank">QAEZZ</a>
+            <br />
+            <br />
+            All icons used belong to their respective owners.
+            <br />
+            I, Yendy, am not endorsed nor related to any of the companies/organizations shown on this website.
+            <br />
+            Yendy's PFP comes from and belongs to <a href="https://nyarchlinux.moe/" target="_blank">Nyarch
+                Linux</a>.
+            <br/>
+            <br/>
+            <a href="#">Back to top?</a>
+        </footer>
+    </div>
+
+    <script src="particles.js"></script>
     <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/bbd5e05e51.js" crossorigin="anonymous"></script>
 </body>
+
+</html>
