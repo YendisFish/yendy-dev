@@ -1,0 +1,336 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 versions,IE 11
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+/*
+
+Hello! QAEZZ was here.
+https://github.com/QAEZZ
+
+*/
+
+:root {
+  --background-color: rgb(23, 64, 111);
+  --text-color: rgb(237, 237, 237);
+  --border-color: rgb(170, 170, 200);
+  --repo-background-color: rgb(23, 64, 111);
+  --repo-desc-text-color: rgb(200, 200, 200);
+
+  --gradient-angle: 90deg;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--text-color);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  overflow-y: scroll !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: -o-linear-gradient(
+    var(--gradient-angle),
+    #3f0e83,
+    var(--background-color)
+  );
+  background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(var(--gradient-angle)),
+    color-stop(#3f0e83),
+    to(var(--background-color))
+  );
+  background: linear-gradient(
+    var(--gradient-angle),
+    #3f0e83,
+    var(--background-color)
+  );
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: var(--text-color);
+  height: 3px;
+  margin: 2px 5px 0 0;
+  border-radius: 50px;
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+
+  -webkit-transition: all 0.2s;
+
+  -o-transition: all 0.2s;
+
+  transition: all 0.2s;
+}
+
+a:hover {
+  opacity: 0.5;
+  font-size: large;
+}
+
+footer {
+  width: 90%;
+  color: rgba(200, 200, 200, 0.5);
+}
+
+footer a {
+  color: rgba(200, 200, 200, 0.7);
+  font-style: normal;
+  text-decoration: underline;
+
+  -webkit-transition: all 0.2s;
+
+  -o-transition: all 0.2s;
+
+  transition: all 0.2s;
+}
+
+footer a:hover {
+  opacity: 0.5;
+  font-size: initial;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place it below the content */
+  background: -o-linear-gradient(
+    var(--gradient-angle),
+    #3f0e83,
+    var(--background-color)
+  );
+  background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(var(--gradient-angle)),
+    color-stop(#3f0e83),
+    to(var(--background-color))
+  );
+  background: linear-gradient(
+    var(--gradient-angle),
+    #3f0e83,
+    var(--background-color)
+  );
+}
+
+#welcome-card-side {
+  padding-top: 5%;
+}
+
+#welcome {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#welcome img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  position: relative;
+  top: 1px;
+  aspect-ratio: 1/1;
+  width: 40%;
+
+  cursor: pointer;
+  -webkit-transition: all 0.4s cubic-bezier(0.45, 0.54, 0.05, 1.55);
+  -o-transition: all 0.4s cubic-bezier(0.45, 0.54, 0.05, 1.55);
+  transition: all 0.4s cubic-bezier(0.45, 0.54, 0.05, 1.55);
+}
+
+#welcome #top {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#details {
+  width: 100%;
+  text-align: left;
+}
+
+#details #name {
+  font-size: 3em;
+}
+
+#details #name::after {
+  content: "[dev]";
+  font-size: 0.4em;
+  vertical-align: 22px;
+  margin-left: 5px;
+}
+
+#details i {
+  font-size: 1em;
+  width: 15px;
+  text-align: center;
+  padding: 0.2em;
+}
+
+#details i#FUCKYOUDISCORD {
+  position: relative;
+  left: -2px;
+}
+
+#contacts {
+  margin-top: 12px;
+}
+
+#skills {
+  text-align: right;
+  height: 100%;
+}
+
+#skills img {
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#skills img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  margin: 2px 5px;
+}
+
+.repo-card {
+  z-index: 60 !important;
+  border: 0.1px solid rgba(200, 200, 200, 0.5);
+  background: rgba(40, 40, 40, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 5px 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 5px;
+  text-align: left;
+
+  cursor: pointer;
+
+  -webkit-transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  -o-transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.repo-card:hover {
+  -webkit-transform: scale(1.025);
+  -ms-transform: scale(1.025);
+  transform: scale(1.025);
+}
+
+.repo-card p {
+  color: var(--repo-desc-text-color);
+}
+
+.repo-card p:last-of-type {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: small;
+}
+
+.repo-card h1 {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.repo-card h1:first-of-type {
+  border-bottom: 0.1px solid rgba(200, 200, 200, 0.5);
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.pfp-clicked {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+@media only screen and (max-width: 700px) {
+
+  footer {
+    margin: 0 5px;
+  }
+
+  #welcome-card-side {
+    margin: 0 5px;
+    padding-top: 5%;
+  }
+
+  
+  #welcome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+  }
+
+  #welcome #top {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+
+  #skills > div {
+    text-align: center;
+  }
+
+  #skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin-top: 10px;
+    gap: 2px;
+  }
+}
